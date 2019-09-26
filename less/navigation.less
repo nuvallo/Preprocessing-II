@@ -1,6 +1,6 @@
 // Navigation Styles here
 .navbar {
-  @displayflex();
+  .displayflex(space-between, row, none, none);
   border-bottom: 2px dashed @navigation-border;
 
   .logo {
@@ -13,7 +13,7 @@
   }
 
   ul {
-    @displayflex();
+    .displayflex(none, row, none, none);
     margin: @margin;
   }
 
@@ -30,5 +30,12 @@
         opacity: 0.5;
       }
     }
+  }
+}
+
+// Mobile
+@media @mobile {
+  .navbar {
+    .displayflex(center, column, center, none);
   }
 }

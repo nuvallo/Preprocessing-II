@@ -1,9 +1,17 @@
 // Mixins in here
 .primary-btn(@padding, @fontColor, @bgColor) {
-  justify-content: center;
-  display: flex;
+  .displayflex(center, row, none, none);
   border-radius: 20px;
   padding: @padding;
   color: @fontColor;
   background: @bgColor;
+}
+
+// flex
+.displayflex(@justify, @direction, @align, @wrap) {
+  display: flex;
+  justify-content: @justify;
+  flex-direction: @direction;
+  align-items: @align;
+  flex-flow: @wrap;
 }
