@@ -174,7 +174,7 @@ img {
   border-bottom: 2px dashed #c0c0c0;
 }
 .navbar .logo {
-  margin: 2% 0;
+  margin: 2% 0 1% 0;
   font-family: "Indie Flower", cursive;
   color: #212529;
   font-size: 30px;
@@ -192,7 +192,6 @@ img {
 .navbar li a {
   text-decoration: none;
   font-size: 16px;
-  font-family: "Indie Flower", cursive;
   color: #212529;
 }
 .navbar li a:hover {
@@ -263,4 +262,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+  padding: 20px;
+  color: #ffffff;
+  background: #17a2b8;
 }
