@@ -1,4 +1,6 @@
 // Mixins in here
+
+// Button
 .primary-btn(@padding, @fontColor, @bgColor) {
   .displayflex(center, row, none, none);
   border-radius: 20px;
@@ -14,4 +16,9 @@
   flex-direction: @direction;
   align-items: @align;
   flex-flow: @wrap;
+}
+
+// Animation
+.animation(@animationName, @seconds,  @loops) {
+  animation: @animationName @seconds @loops;
 }

@@ -1,3 +1,10 @@
+// Animation
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 // Navigation Styles here
 .navbar {
   .displayflex(space-between, row, none, none);
@@ -10,6 +17,10 @@
     font-size: 30px;
     text-decoration: none;
     font-weight: 800;
+
+    &:hover {
+      .animation(rotate, 1.5s, infinite);
+    }
   }
 
   ul {
