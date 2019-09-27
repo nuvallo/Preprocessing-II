@@ -1,1 +1,24 @@
 // Mixins in here
+
+// Button
+.primary-btn(@padding, @fontColor, @bgColor) {
+  .displayflex(center, row, none, none);
+  border-radius: 20px;
+  padding: @padding;
+  color: @fontColor;
+  background: @bgColor;
+}
+
+// flex
+.displayflex(@justify, @direction, @align, @wrap) {
+  display: flex;
+  justify-content: @justify;
+  flex-direction: @direction;
+  align-items: @align;
+  flex-flow: @wrap;
+}
+
+// Animation
+.animation(@animationName, @seconds,  @loops) {
+  animation: @animationName @seconds @loops;
+}

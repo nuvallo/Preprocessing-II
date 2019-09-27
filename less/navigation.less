@@ -1,1 +1,52 @@
+// Animation
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 // Navigation Styles here
+.navbar {
+  .displayflex(space-between, row, none, none);
+  border-bottom: 2px dashed @navigation-border;
+
+  .logo {
+    margin: 2% 0 1% 0;
+    font-family: @font;
+    color: @shark;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 800;
+
+    &:hover {
+      .animation(rotate, 1.5s, infinite);
+    }
+  }
+
+  ul {
+    .displayflex(none, row, none, none);
+    margin: @margin;
+  }
+
+  li {
+    padding: 0 20px;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+
+      color: @shark;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+// Mobile
+@media @mobile {
+  .navbar {
+    .displayflex(center, column, center, none);
+  }
+}
