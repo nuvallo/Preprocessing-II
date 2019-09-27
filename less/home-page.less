@@ -170,3 +170,54 @@
     }
   }
 }
+
+// Tablet
+@media @tablet {
+  .home {
+    .content-section {
+      .displayflex(center, column, none, none);
+      .text-content {
+        width: 100%;
+        padding-right: 0;
+      }
+
+      .img-content {
+        width: 100%;
+        padding-left: 0;
+
+        img {
+          border-radius: 10px;
+          width: 100%;
+          padding: 0 2%;
+          margin: @margin;
+        }
+      }
+    }
+
+    .content-destination {
+      width: 85%;
+    }
+
+    .content-pick {
+      .displayflex(space-between, column, none, none);
+      margin: 2% 10%;
+      .destination {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    //  submission form
+    .main-form {
+      form {
+        margin: 5% 0;
+        border: none;
+        .displayflex(space-around, column, center, none);
+
+        .form-bottom {
+          border-top: 2px solid @navigation-border;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
