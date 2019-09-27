@@ -302,6 +302,62 @@ img {
   color: #ffffff;
   background: #17a2b8;
 }
+.home .main-form {
+  padding: 2% 0 5% 0;
+  border-top: 2px dashed #c0c0c0;
+}
+.home .main-form input {
+  border: none;
+}
+.home .main-form h1 {
+  text-align: center;
+}
+.home .main-form form {
+  margin: 5% 0;
+  border: 2px solid #c0c0c0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: none;
+}
+.home .main-form form .form-top label {
+  font-size: 20px;
+}
+.home .main-form form .form-top input {
+  margin: 10% 0;
+}
+.home .main-form form .form-top span {
+  font-size: 16px;
+}
+.home .main-form form .form-bottom {
+  display: flex;
+  justify-content: none;
+  flex-direction: column;
+  align-items: none;
+  flex-flow: none;
+  margin: 1% 0 2% 0;
+}
+.home .main-form form .form-bottom label {
+  font-size: 15px;
+  margin: 10% 0;
+}
+.home .main-form form .form-bottom input {
+  padding: 5% 10%;
+  border-bottom: 2px solid #c0c0c0;
+}
+.home .main-form a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+  border-radius: 20px;
+  padding: 20px;
+  color: #ffffff;
+  background: #17a2b8;
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .home .content-section {
     display: flex;

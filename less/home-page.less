@@ -66,6 +66,56 @@
       }
     }
   }
+
+  .main-form {
+    padding: 2% 0 5% 0;
+    border-top: 2px dashed @navigation-border;
+    input {
+      border: none;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin: 5% 0;
+      border: 2px solid @navigation-border;
+
+      .displayflex(space-around, row, center, none);
+
+      .form-top {
+        label {
+          font-size: 20px;
+        }
+        input {
+          margin: 10% 0;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+
+      .form-bottom {
+        .displayflex(none, column, none, none);
+        margin: 1% 0 2% 0;
+
+        label {
+          font-size: 15px;
+          margin: 10% 0;
+        }
+
+        input {
+          padding: 5% 10%;
+          border-bottom: 2px solid @navigation-border;
+        }
+      }
+    }
+    a {
+      .primary-btn(20px, @main-bg, @eastern-blue);
+      text-decoration: none;
+    }
+  }
 } // home
 
 // Mobile
