@@ -395,4 +395,17 @@ img {
     width: 100%;
     margin-bottom: 30px;
   }
+  .home .main-form form {
+    margin: 5% 0;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
+  .home .main-form form .form-bottom {
+    border-top: 2px solid #c0c0c0;
+    width: 80%;
+  }
 }
